@@ -93,6 +93,12 @@ em { font-style: italic; color: var(--gold); }
   transition: height .3s ease, margin .3s ease;
 }
 #navbar.scrolled .nav-logo img { height: 99px; margin: 5px 0; }
+/* Mobile: hide Visit Us CTA from desktop nav (it's in the hamburger menu) */
+@media (max-width: 768px) {
+  .nav-logo img { height: 72px; margin: 4px 0; }
+  #navbar.scrolled .nav-logo img { height: 60px; margin: 3px 0; }
+  .nav-cta { display: none; }
+}
 .nav-links { display: flex; align-items: center; gap: .2rem; }
 .nav-links li a {
   font-size: .82rem; font-weight: 500; letter-spacing: .09em;
@@ -2540,59 +2546,121 @@ body:not(.menu-page) .menu-section { background: var(--cream); }
     background: rgba(13,31,60,.98); flex-direction: column;
     padding: 1.5rem 2rem 2rem; gap: .25rem;
     backdrop-filter: blur(16px); border-top: 1px solid rgba(201,168,76,.15);
+    box-shadow: 0 16px 40px rgba(0,0,0,.5);
   }
   .nav-links.open { display: flex; }
+  /* Show Visit Us in the dropdown on mobile */
+  .nav-links .nav-cta { display: inline-flex; margin-top: .5rem; align-self: flex-start; }
   .nav-links li a { display: block; padding: .75rem 1rem; font-size: .9rem; }
-  .hero-content    { padding: 7rem 1.5rem 4rem; }
+  .hero-content    { padding: 6rem 1.2rem 3.5rem; }
+  .hero-title      { font-size: clamp(2.6rem, 11vw, 4.5rem); }
   .hero-actions    { flex-direction: column; align-items: center; }
+  .hero-actions .btn { width: 100%; max-width: 320px; justify-content: center; }
   .music-headline  { flex-direction: column; gap: 1.5rem; }
   .music-features  { grid-template-columns: 1fr 1fr; }
+  .music-stats     { width: 100%; overflow-x: auto; }
+  .music-stat      { padding: 1.1rem 1.6rem; flex-shrink: 0; }
+  /* Artist Spotlight */
+  .ashow-section   { padding: 3.5rem 0 3rem; }
+  .ashow-header    { margin-bottom: 3rem; }
+  /* Atmosphere */
+  .atmosphere      { grid-template-columns: 1fr; }
+  .atmo-image      { min-height: 340px; }
+  .atmo-content    { padding: 3rem 1.5rem; }
+  /* Reviews */
   .review-card     { flex: 0 0 calc(50% - .7rem); }
-  .review-featured { padding: 2rem 2rem 1.8rem; }
+  .review-featured { padding: 2rem 1.8rem 1.8rem; }
+  .reviews-platforms { flex-direction: column; align-items: center; gap: 1rem; }
+  .platform-badge  { width: 100%; max-width: 320px; }
+  /* Drinks */
   .drinks-hero     { grid-template-columns: 1fr; gap: 2rem; }
-  .drinks-hero-img { aspect-ratio: 4/3; max-width: 480px; margin: 0 auto; }
+  .drinks-hero-img { aspect-ratio: 4/3; max-width: 440px; margin: 0 auto; }
   .drinks-grid     { grid-template-columns: repeat(2,1fr); }
+  /* Gallery */
   .gallery-grid    { grid-template-columns: 1fr 1fr; }
   .gallery-item.gallery-wide { grid-column: span 2; }
-  .about-pillars   { grid-template-columns: 1fr; }
-  .contact-cards   { grid-template-columns: 1fr 1fr; }
+  /* About */
+  .about-inner     { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-pillars   { grid-template-columns: 1fr 1fr; gap: .8rem; }
+  /* Contact */
+  .contact-section { padding: 5rem 0 4rem; }
+  .contact-cards   { grid-template-columns: 1fr 1fr; max-width: 100%; }
   .contact-cta-row { flex-direction: column; align-items: center; }
-  /* music calendar */
-  .music-stats      { width: 100%; }
-  .music-stat       { padding: 1.1rem 2rem; }
-  /* menu responsive */
+  .contact-cta-row .btn { width: 100%; max-width: 320px; justify-content: center; }
+  /* Menu grid */
   .menu-grid-uniform { grid-template-columns: repeat(2, 1fr); }
   .menu-grid-2col    { grid-template-columns: repeat(2, 1fr); }
   .sides-grid        { grid-template-columns: repeat(2, 1fr); }
+  /* Container tighter */
+  .container { padding: 0 1.2rem; }
 }
 @media (max-width: 480px) {
-  .music-features  { grid-template-columns: 1fr; }
-  .contact-cards   { grid-template-columns: 1fr 1fr; }
-  .contact-logo-img { width: clamp(200px, 70vw, 300px); }
-  .contact-logo-glow { width: 320px; height: 180px; }
-  .drinks-grid     { grid-template-columns: 1fr 1fr; }
-  .review-card     { flex: 0 0 88%; }
-  .reviews-platforms { gap: 1rem; }
-  .platform-badge   { min-width: 160px; padding: 1rem 1.4rem; }
-  .review-featured { padding: 1.8rem 1.5rem; }
-  .reviews-cta-btns { flex-direction: column; align-items: center; }
-  .gallery-grid   { grid-template-columns: 1fr; }
-  .gallery-item.gallery-wide { grid-column: span 1; aspect-ratio: 4/3; }
-  .atmo-content   { padding: 2.5rem 1.5rem; }
-  .hero-ticker    { display: none; }
-  /* remove old video-grid mobile rules now handled in vsec */
-  .music-stat      { padding: 1rem 1.4rem; }
-  .music-stat-num  { font-size: 2rem; }
-  .music-stats     { flex-wrap: wrap; width: 100%; }
+  /* Nav */
+  .nav-logo img { height: 60px; margin: 3px 0; }
+  #navbar.scrolled .nav-logo img { height: 52px; margin: 2px 0; }
+  /* Hero */
+  .hero-content { padding: 5.5rem 1rem 3rem; }
+  .hero-title   { font-size: clamp(2.2rem, 12vw, 3.2rem); }
+  .hero-ticker  { display: none; }
+  .hero-badge   { font-size: .68rem; padding: .4rem 1rem; }
+  /* Music */
   .music-features  { grid-template-columns: 1fr 1fr; }
-  /* menu */
+  .music-stat      { padding: 1rem 1.2rem; }
+  .music-stat-num  { font-size: 1.8rem; }
+  .music-stats     { flex-wrap: wrap; justify-content: center; }
+  .music-stat-div  { display: none; }
+  .sched-legend    { flex-wrap: wrap; gap: .5rem; justify-content: center; }
+  /* Artist Spotlight */
+  .ashow-section   { padding: 3rem 0 2.5rem; }
+  .ashow-title     { font-size: clamp(1.9rem, 8vw, 2.6rem); }
+  .ashow-coming-inner { padding: 1.5rem; }
+  .ashow-coming-pills { display: none; }
+  /* Reviews */
+  .review-card     { flex: 0 0 88%; }
+  .review-featured { padding: 1.8rem 1.3rem; }
+  .reviews-cta-btns { flex-direction: column; align-items: center; }
+  .reviews-cta-btns .btn { width: 100%; max-width: 300px; justify-content: center; }
+  /* Contact */
+  .contact-cards   { grid-template-columns: 1fr 1fr; }
+  .contact-logo-img { width: clamp(180px, 65vw, 260px); }
+  .contact-logo-glow { width: 280px; height: 160px; }
+  /* Drinks */
+  .drinks-grid     { grid-template-columns: 1fr 1fr; }
+  .drinks-hero-img { aspect-ratio: 16/10; }
+  /* Gallery */
+  .gallery-grid   { grid-template-columns: 1fr 1fr; }
+  .gallery-item.gallery-wide { grid-column: span 2; aspect-ratio: 16/9; }
+  /* Atmosphere */
+  .atmo-content   { padding: 2.5rem 1.2rem; }
+  /* Menu */
   .menu-grid-uniform { grid-template-columns: 1fr; }
   .menu-grid-2col    { grid-template-columns: 1fr; }
   .sides-grid        { grid-template-columns: 1fr; }
   .menu-tabs         { flex-direction: column; align-items: center; }
   .menu-tab          { width: 100%; max-width: 300px; justify-content: center; }
-  /* video grid — mobile: single column */
+  /* Video */
   .video-grid { grid-template-columns: 1fr; grid-template-rows: repeat(6, 220px); }
   .vg-wide    { grid-column: span 1; }
   .vg-tall    { grid-row: span 1; }
+  /* Container */
+  .container { padding: 0 1rem; }
+}
+
+/* ── Extra-small phones (375px and below) ── */
+@media (max-width: 375px) {
+  .nav-logo img { height: 52px; }
+  .hero-title   { font-size: 2.1rem; }
+  .hero-sub     { font-size: .9rem; letter-spacing: .12em; }
+  .hero-actions .btn { font-size: .82rem; padding: .75rem 1.4rem; }
+  .contact-cards { grid-template-columns: 1fr; }
+  .contact-card  { padding: 1.4rem 1rem; }
+  .ashow-spotlight,
+  .ashow-spotlight-reverse { gap: 1.5rem; }
+  .ashow-photo-frame { aspect-ratio: 3/2; }
+  .ashow-artist-name { font-size: 1.8rem; }
+  .music-stat   { padding: .8rem 1rem; }
+  .review-featured blockquote { font-size: 1rem; }
+  .container { padding: 0 .85rem; }
+  .btn { padding: .75rem 1.6rem; font-size: .82rem; }
+  .btn-lg { padding: .9rem 1.8rem; }
 }
