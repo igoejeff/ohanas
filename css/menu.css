@@ -1,0 +1,1127 @@
+/* ============================================================
+   MENU.CSS — Dedicated Menu Page
+   Ohana's Island Bistro & Live Music
+   All colors are EXPLICIT — overrides all global style.css rules
+   ============================================================ */
+
+/* ============================================================
+   HARD RESET — Force menu page to dark theme, override everything
+   ============================================================ */
+html:has(body.menu-page),
+html:has(body.menu-page) body {
+  background: #0D1F3C !important;
+}
+
+body.menu-page {
+  background: #0D1F3C !important;
+  color: #ffffff !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Nuclear override — every section wrapper must be dark */
+body.menu-page .menu-section {
+  background: #0D1F3C !important;
+  color: #ffffff !important;
+}
+
+body.menu-page .menu-section-alt {
+  background: #091525 !important;
+  color: #ffffff !important;
+}
+
+/* Override style.css .section-header rules on menu page */
+body.menu-page .menu-section-header h2,
+body.menu-page .menu-section-header h3 {
+  color: #ffffff !important;
+}
+
+body.menu-page .menu-section-header p {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Override any cream/light backgrounds leaking in */
+body.menu-page section,
+body.menu-page header,
+body.menu-page div:not(.mcard-img-wrap):not(.menu-hero-bg) {
+  color: inherit;
+}
+
+/* Kill the global em { color: var(--gold) } rule on this page */
+body.menu-page em {
+  color: #C9A84C !important;
+  font-style: italic;
+}
+
+/* Override global heading, paragraph, span, li, strong colors */
+body.menu-page h1,
+body.menu-page h2,
+body.menu-page h3,
+body.menu-page h4,
+body.menu-page h5,
+body.menu-page h6 {
+  color: #ffffff !important;
+}
+
+body.menu-page p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body.menu-page span {
+  color: inherit;
+}
+
+body.menu-page li {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body.menu-page strong {
+  color: #ffffff !important;
+}
+
+body.menu-page a {
+  color: inherit;
+}
+
+/* ============================================================
+   NAVBAR OVERRIDE
+   ============================================================ */
+body.menu-page .navbar {
+  background: rgba(8, 18, 40, 0.97);
+}
+
+body.menu-page .nav-links li a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+body.menu-page .nav-links li a:hover,
+body.menu-page .nav-links li a.active {
+  color: #C9A84C;
+}
+
+/* ============================================================
+   MENU HERO
+   ============================================================ */
+.menu-hero {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.menu-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.menu-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  filter: brightness(0.38);
+}
+
+.menu-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13, 31, 60, 0.98) 0%,
+    rgba(13, 31, 60, 0.5) 55%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}
+
+.menu-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.menu-hero-content .section-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #C9A84C !important;
+  margin-bottom: 0.75rem;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.menu-hero-content h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  color: #ffffff !important;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+
+.menu-hero-content h1 em {
+  color: #C9A84C !important;
+  font-style: italic;
+}
+
+.menu-hero-content > p {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.menu-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.menu-hero-badges span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #C9A84C !important;
+}
+
+.menu-hero-badges span i {
+  color: #C9A84C !important;
+}
+
+/* ============================================================
+   STICKY SECTION NAV
+   ============================================================ */
+.menu-sticky-nav {
+  position: sticky;
+  top: 130px;
+  z-index: 100;
+  background: rgba(8, 18, 40, 0.98);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: box-shadow 0.3s;
+}
+
+.menu-sticky-nav.scrolled {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.menu-sticky-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.menu-sticky-inner::-webkit-scrollbar { display: none; }
+
+.msnav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 1rem 1.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5) !important;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.msnav-link i {
+  font-size: 0.72rem;
+  color: inherit !important;
+}
+
+.msnav-link:hover {
+  color: #C9A84C !important;
+}
+
+.msnav-link.active {
+  color: #C9A84C !important;
+  border-bottom-color: #C9A84C;
+}
+
+/* ============================================================
+   MENU SECTIONS LAYOUT
+   ============================================================ */
+.menu-section {
+  padding: 5rem 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  background: #0D1F3C !important;
+  color: #ffffff !important;
+}
+
+/* Alternate sections — slightly darker band */
+.menu-section-alt {
+  background: #091525;
+  max-width: 100%;
+  padding: 5rem 0;
+}
+
+.menu-section-alt .menu-section-header,
+.menu-section-alt .menu-section-grid,
+.menu-section-alt .sides-full-grid,
+.menu-section-alt .menu-section-note,
+.menu-section-alt .drinks-menu-subsection,
+.menu-section-alt .drinks-list-grid,
+.menu-section-alt .happy-hour-callout {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* ============================================================
+   SECTION HEADER
+   ============================================================ */
+.menu-section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.msec-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C9A84C !important;
+  margin-bottom: 0.75rem;
+}
+
+.msec-label i {
+  font-size: 0.65rem;
+  color: #C9A84C !important;
+}
+
+.menu-section-header h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  color: #ffffff !important;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.menu-section-header h2 em {
+  color: #C9A84C !important;
+  font-style: italic;
+}
+
+.menu-section-header p {
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-size: 1rem;
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   MENU CARD GRID
+   ============================================================ */
+.menu-section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.menu-section-grid-wide {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ============================================================
+   MENU CARD
+   ============================================================ */
+.mcard {
+  background: #112240;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mcard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201, 168, 76, 0.6);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.5);
+}
+
+.mcard-featured {
+  border-color: rgba(201, 168, 76, 0.4);
+  background: #13284a;
+}
+
+.mcard-special {
+  border-color: rgba(100, 60, 200, 0.4);
+  background: #13202e;
+}
+
+/* Card image wrapper */
+.mcard-img-wrap {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #0a1828;
+}
+
+.mcard-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+.mcard:hover .mcard-img-wrap img {
+  transform: scale(1.06);
+}
+
+/* Placeholder — clean gradient, no icon */
+.mcard-img-placeholder {
+  background: linear-gradient(160deg, #0d1e36 0%, #112240 50%, #0a1828 100%);
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle shimmer lines for texture */
+.mcard-img-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 20px,
+    rgba(255,255,255,0.015) 20px,
+    rgba(255,255,255,0.015) 21px
+  );
+}
+
+.mcard-photo-soon {
+  display: none; /* Hide the camera icon entirely */
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(201, 168, 76, 0.4) !important;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.mcard-photo-soon i {
+  font-size: 2rem;
+  color: rgba(201, 168, 76, 0.35) !important;
+}
+
+.mcard-photo-soon span {
+  color: rgba(201, 168, 76, 0.35) !important;
+}
+
+/* Overlay badges — fade in on hover */
+.mcard-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.8rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.mcard:hover .mcard-overlay { opacity: 1; }
+
+.mcard-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.mbadge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.6rem;
+  border-radius: 4px;
+  color: #ffffff !important;
+}
+
+.mbadge-gf   { background: #1a9050; color: #ffffff !important; }
+.mbadge-veg  { background: #1a7a1a; color: #ffffff !important; }
+.mbadge-star { background: #C9A84C; color: #0D1F3C !important; }
+.mbadge-chef { background: #7040c8; color: #ffffff !important; }
+
+/* Gold ribbon at bottom of image */
+.mcard-featured-ribbon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #C9A84C, rgba(201, 168, 76, 0.8));
+  color: #0D1F3C !important;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.35rem 0;
+}
+
+/* ---- Card body ---- */
+.mcard-body {
+  padding: 1.3rem 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  flex: 1;
+  background: transparent;
+}
+
+.mcard-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.mcard-top h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  line-height: 1.3;
+  flex: 1;
+  margin: 0;
+}
+
+.mcard-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #C9A84C !important;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.mcard-body > p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.65) !important;
+  line-height: 1.65;
+  flex: 1;
+  margin: 0;
+}
+
+/* Dietary tags */
+.mcard-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.1rem;
+}
+
+.mtag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.65rem;
+  border-radius: 50px;
+}
+
+.mtag i { font-size: 0.58rem; color: inherit !important; }
+
+.mtag-gf  {
+  background: rgba(26, 144, 80, 0.18);
+  border: 1px solid rgba(26, 144, 80, 0.45);
+  color: #5dd88a !important;
+}
+
+.mtag-veg {
+  background: rgba(26, 122, 26, 0.18);
+  border: 1px solid rgba(26, 122, 26, 0.45);
+  color: #7dd85a !important;
+}
+
+.mtag-chef {
+  background: rgba(112, 64, 200, 0.18);
+  border: 1px solid rgba(112, 64, 200, 0.45);
+  color: #c07aff !important;
+}
+
+/* Add-on upsell */
+.mcard-addons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.1rem;
+}
+
+.mcard-addons span {
+  font-size: 0.72rem;
+  color: rgba(201, 168, 76, 0.8) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.mcard-addons i {
+  font-size: 0.6rem;
+  color: rgba(201, 168, 76, 0.8) !important;
+}
+
+/* Section note bar */
+.menu-section-note {
+  background: rgba(201, 168, 76, 0.07);
+  border: 1px solid rgba(201, 168, 76, 0.22);
+  border-radius: 10px;
+  padding: 0.9rem 1.4rem;
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.55) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.menu-section-note i {
+  color: #C9A84C !important;
+  flex-shrink: 0;
+}
+
+.menu-section-note strong {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ============================================================
+   SIDES GRID
+   ============================================================ */
+.sides-full-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.side-full-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #112240;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.2rem 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.side-full-card:hover {
+  border-color: rgba(201, 168, 76, 0.5);
+  background: #13284a;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+}
+
+.sfc-emoji {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 44px;
+  text-align: center;
+}
+
+.sfc-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #ffffff !important;
+  flex-shrink: 0;
+}
+
+.sfc-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.sfc-body strong {
+  color: #ffffff !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sfc-body span {
+  color: rgba(255, 255, 255, 0.45) !important;
+  font-size: 0.74rem;
+  line-height: 1.4;
+}
+
+.sfc-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #C9A84C !important;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   DRINKS SECTION
+   ============================================================ */
+/* Explicit dark override for drinks section */
+.menu-section-drinks,
+body.menu-page .menu-section-drinks {
+  background: #0D1F3C !important;
+  color: #ffffff !important;
+}
+
+body.menu-page .menu-section-drinks h2,
+body.menu-page .menu-section-drinks h3,
+body.menu-page .menu-section-drinks p {
+  color: #ffffff !important;
+}
+
+body.menu-page .menu-section-drinks .menu-section-header p {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.drinks-menu-subsection {
+  margin-bottom: 3.5rem;
+}
+
+.drinks-sub-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.3rem;
+  color: #ffffff !important;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.drinks-sub-title i {
+  color: #C9A84C !important;
+  font-size: 1rem;
+}
+
+.drinks-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+}
+
+.drink-menu-card {
+  background: #112240;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.drink-menu-card:hover {
+  border-color: rgba(201, 168, 76, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
+}
+
+.drink-menu-img {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background: #0a1828;
+}
+
+.drink-menu-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.drink-menu-card:hover .drink-menu-img img {
+  transform: scale(1.08);
+}
+
+.dmc-badge {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  background: #C9A84C;
+  color: #0D1F3C !important;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.6rem;
+  border-radius: 4px;
+}
+
+.drink-menu-body {
+  padding: 1rem 1.1rem 1.2rem;
+  background: transparent;
+}
+
+.drink-menu-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+
+.drink-menu-top h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.95rem;
+  color: #ffffff !important;
+  font-weight: 700;
+  margin: 0;
+}
+
+.dmc-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  color: #C9A84C !important;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.drink-menu-body > p {
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.6) !important;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Beer / wine list */
+.drinks-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+}
+
+.drink-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #112240;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.drink-list-item:hover {
+  border-color: rgba(201, 168, 76, 0.4);
+  background: #13284a;
+}
+
+.dli-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(201, 168, 76, 0.28);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C9A84C !important;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.dli-body { flex: 1; }
+
+.dli-body strong {
+  display: block;
+  color: #ffffff !important;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.dli-body span {
+  color: rgba(255, 255, 255, 0.45) !important;
+  font-size: 0.74rem;
+}
+
+.dli-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #C9A84C !important;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* Happy hour callout banner */
+.happy-hour-callout {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(201, 168, 76, 0.1);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 16px;
+  padding: 1.8rem 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.hhc-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #C9A84C !important;
+  flex-shrink: 0;
+}
+
+.hhc-body { flex: 1; min-width: 200px; }
+
+.hhc-body strong {
+  display: block;
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.hhc-body span {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 0.88rem;
+}
+
+/* ============================================================
+   DISCLAIMER BAR
+   ============================================================ */
+.menu-disclaimer-bar {
+  background: #06101f;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 1.4rem 2rem;
+}
+
+.mdb-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mdb-inner p {
+  font-size: 0.82rem !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.mdb-inner strong {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.mdb-inner i {
+  color: rgba(201, 168, 76, 0.6) !important;
+}
+
+/* ============================================================
+   BOTTOM CTA
+   ============================================================ */
+.menu-bottom-cta {
+  background: #06101f;
+  border-top: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 5rem 2rem;
+}
+
+.mbcta-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.mbcta-text h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  color: #ffffff !important;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  line-height: 1.15;
+}
+
+.mbcta-text h2 em {
+  color: #C9A84C !important;
+  font-style: italic;
+}
+
+.mbcta-text p {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.mbcta-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-lg { padding: 0.9rem 2.2rem !important; font-size: 0.9rem !important; }
+
+.mbcta-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  justify-content: center;
+}
+
+.mbcta-info span {
+  font-size: 0.82rem !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.mbcta-info i {
+  color: #C9A84C !important;
+  font-size: 0.7rem;
+}
+
+/* ============================================================
+   FOOTER OVERRIDE FOR MENU PAGE
+   ============================================================ */
+body.menu-page .site-footer {
+  background: #050c18;
+  border-top: 1px solid rgba(201, 168, 76, 0.15);
+  padding: 3rem 0 2rem;
+}
+
+body.menu-page .footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+body.menu-page .footer-logo img {
+  height: 80px;
+  width: auto;
+  opacity: 0.9;
+}
+
+body.menu-page .footer-tagline {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 0.88rem;
+  letter-spacing: 0.06em;
+}
+body.menu-page .footer-contact-line {
+  color: rgba(255,255,255,.4);
+}
+body.menu-page .footer-copy {
+  color: rgba(255, 255, 255, 0.3) !important;
+  font-size: 0.78rem;
+}
+
+/* ============================================================
+   GLOBAL btn-outline ON DARK PAGE
+   ============================================================ */
+body.menu-page .btn-outline {
+  background: transparent;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+body.menu-page .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #ffffff !important;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1100px) {
+  .menu-section-grid      { grid-template-columns: repeat(2, 1fr); }
+  .menu-section-grid-wide { grid-template-columns: repeat(2, 1fr); }
+  .drinks-menu-grid       { grid-template-columns: repeat(2, 1fr); }
+  .sides-full-grid        { grid-template-columns: repeat(2, 1fr); }
+  .drinks-list-grid       { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .menu-hero { min-height: 320px; padding-bottom: 3rem; }
+  .menu-sticky-nav { top: 0; }
+  .msnav-link { padding: 0.8rem 1rem; font-size: 0.7rem; }
+  .menu-section { padding: 3.5rem 1.5rem; }
+  .menu-section-grid      { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .menu-section-grid-wide { grid-template-columns: 1fr 1fr; }
+  .drinks-menu-grid       { grid-template-columns: 1fr 1fr; }
+  .drinks-list-grid       { grid-template-columns: 1fr 1fr; }
+  .sides-full-grid        { grid-template-columns: repeat(2, 1fr); }
+  .happy-hour-callout     { gap: 1rem; padding: 1.4rem 1.5rem; }
+  .mbcta-actions          { flex-direction: column; align-items: center; }
+  .mbcta-info             { gap: 0.8rem 1.5rem; }
+}
+
+@media (max-width: 520px) {
+  .menu-section-grid      { grid-template-columns: 1fr; }
+  .menu-section-grid-wide { grid-template-columns: 1fr; }
+  .drinks-menu-grid       { grid-template-columns: 1fr; }
+  .drinks-list-grid       { grid-template-columns: 1fr; }
+  .sides-full-grid        { grid-template-columns: 1fr 1fr; }
+  .menu-hero-badges span  { font-size: 0.68rem; padding: 0.32rem 0.75rem; }
+  .menu-section           { padding: 3rem 1.2rem; }
+  .menu-section-header    { margin-bottom: 2.5rem; }
+  .happy-hour-callout     { flex-direction: column; text-align: center; }
+  .hhc-icon               { margin: 0 auto; }
+}

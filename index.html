@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ohana's Island Bistro & Live Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="https://www.genspark.ai/api/files/s/ZWY4IzhG" alt="Ohana's Island Bistro" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#music">Live Music</a></li>
+        <li><a href="#artists">Artists</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#drinks">Drinks</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Visit Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="https://www.genspark.ai/api/files/s/uKqWEE8A" alt="Ohana's Island patio at night with tiki torches" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Live Music — Every Single Night
+        <span class="badge-dot"></span>
+      </div>
+      <h1 class="hero-title"><em>Ohana's</em> Island</h1>
+      <p class="hero-sub">Bistro &amp; Live Music</p>
+      <p class="hero-desc">
+        Maui's only destination for <strong>nightly live music</strong> —<br />
+        island cuisine, handcrafted cocktails &amp; unforgettable nights under the stars.
+      </p>
+      <div class="hero-actions">
+        <a href="#music" class="btn btn-gold"><i class="fas fa-music"></i> Tonight's Music</a>
+        <a href="#menu" class="btn btn-outline">View Menu</a>
+      </div>
+      <div class="hero-ticker">
+        <i class="fas fa-music"></i>
+        <span>Live music 7 nights a week &nbsp;·&nbsp; Open-air patio &nbsp;·&nbsp; Tiki torches &nbsp;·&nbsp; Island vibes &nbsp;·&nbsp; Handcrafted cocktails &nbsp;·&nbsp; Fresh island cuisine</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE MUSIC -->
+  <section id="music" class="music-section">
+    <div class="container">
+
+      <!-- HEADLINE -->
+      <div class="music-intro">
+        <div class="music-icon-wrap"><i class="fas fa-music"></i></div>
+        <div class="music-intro-text">
+          <span class="music-tag">Maui's Best Kept Secret</span>
+          <h2>Live Music, <em>Every Night.</em></h2>
+          <p>One of the only venues on Maui with live music every single night of the week — <strong>7 nights a week, 365 days a year.</strong> Come for the food, stay for the show.</p>
+        </div>
+      </div>
+
+      <!-- WEEKLY MUSIC SCHEDULER -->
+      <div class="music-scheduler">
+
+        <!-- "Tonight" live indicator -->
+        <div class="sched-tonight-bar">
+          <span class="sched-live-dot"></span>
+          <span>Live music tonight &amp; every night — 3 PM to 9 PM</span>
+          <span class="sched-live-dot"></span>
+        </div>
+
+        <!-- Day column headers -->
+        <div class="sched-header">
+          <div class="sched-time-gutter">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="sched-day-col" data-day="1">
+            <span class="sched-day-name">Mon</span>
+            <span class="sched-day-full">Monday</span>
+          </div>
+          <div class="sched-day-col" data-day="2">
+            <span class="sched-day-name">Tue</span>
+            <span class="sched-day-full">Tuesday</span>
+          </div>
+          <div class="sched-day-col" data-day="3">
+            <span class="sched-day-name">Wed</span>
+            <span class="sched-day-full">Wednesday</span>
+          </div>
+          <div class="sched-day-col" data-day="4">
+            <span class="sched-day-name">Thu</span>
+            <span class="sched-day-full">Thursday</span>
+          </div>
+          <div class="sched-day-col" data-day="5">
+            <span class="sched-day-name">Fri</span>
+            <span class="sched-day-full">Friday</span>
+          </div>
+          <div class="sched-day-col" data-day="6">
+            <span class="sched-day-name">Sat</span>
+            <span class="sched-day-full">Saturday</span>
+          </div>
+          <div class="sched-day-col" data-day="0">
+            <span class="sched-day-name">Sun</span>
+            <span class="sched-day-full">Sunday</span>
+          </div>
+        </div>
+
+        <!-- ROW 1: 3 PM – 6 PM -->
+        <div class="sched-row sched-row-early">
+          <div class="sched-time-gutter">
+            <div class="sched-time-pill sched-pill-early">
+              <span class="sched-time-main">3 PM</span>
+              <span class="sched-time-divider">—</span>
+              <span class="sched-time-end">6 PM</span>
+              <span class="sched-time-tag"><i class="fas fa-sun"></i> Early Set</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="1">
+            <div class="sched-block sched-block-early sched-kris">
+              <div class="sched-block-header"><i class="fas fa-music"></i><span class="sched-artist-badge sched-badge-gold">Resident</span></div>
+              <strong class="sched-artist">Kris Bradley</strong>
+              <span class="sched-genre">Acoustic · Island</span>
+              <span class="sched-slot-time">3 – 6 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="2">
+            <div class="sched-block sched-block-early">
+              <div class="sched-block-header"><i class="fas fa-music"></i></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Island Soul</span>
+              <span class="sched-slot-time">3 – 6 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="3">
+            <div class="sched-block sched-block-early">
+              <div class="sched-block-header"><i class="fas fa-music"></i></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Jazz &amp; Keys</span>
+              <span class="sched-slot-time">3 – 6 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="4">
+            <div class="sched-block sched-block-early sched-kris">
+              <div class="sched-block-header"><i class="fas fa-music"></i><span class="sched-artist-badge sched-badge-gold">Resident</span></div>
+              <strong class="sched-artist">Kris Bradley</strong>
+              <span class="sched-genre">Acoustic · Island</span>
+              <span class="sched-slot-time">3 – 6 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="5">
+            <div class="sched-block sched-block-early sched-block-featured">
+              <div class="sched-block-header"><i class="fas fa-music"></i><span class="sched-artist-badge sched-badge-purple">Featured</span></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Live Band</span>
+              <span class="sched-slot-time">3 – 6 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="6">
+            <div class="sched-block sched-block-early sched-block-featured">
+              <div class="sched-block-header"><i class="fas fa-music"></i><span class="sched-artist-badge sched-badge-purple">Featured</span></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Full Band Night</span>
+              <span class="sched-slot-time">3 – 6 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="0">
+            <div class="sched-block sched-block-early">
+              <div class="sched-block-header"><i class="fas fa-music"></i></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Acoustic · Chill</span>
+              <span class="sched-slot-time">3 – 6 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2: 6 PM – 9 PM -->
+        <div class="sched-row sched-row-main">
+          <div class="sched-time-gutter">
+            <div class="sched-time-pill sched-pill-main">
+              <span class="sched-time-main">6 PM</span>
+              <span class="sched-time-divider">—</span>
+              <span class="sched-time-end">9 PM</span>
+              <span class="sched-time-tag"><i class="fas fa-fire"></i> Main Show</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="1">
+            <div class="sched-block sched-block-main sched-kris">
+              <div class="sched-block-header"><i class="fas fa-microphone"></i><span class="sched-artist-badge sched-badge-gold">Resident</span></div>
+              <strong class="sched-artist">Kris Bradley</strong>
+              <span class="sched-genre">Acoustic · Island</span>
+              <span class="sched-slot-time">6 – 9 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="2">
+            <div class="sched-block sched-block-main">
+              <div class="sched-block-header"><i class="fas fa-microphone"></i></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Solo Acoustic</span>
+              <span class="sched-slot-time">6 – 9 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="3">
+            <div class="sched-block sched-block-main">
+              <div class="sched-block-header"><i class="fas fa-microphone"></i></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Reggae · Rock</span>
+              <span class="sched-slot-time">6 – 9 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="4">
+            <div class="sched-block sched-block-main sched-kris">
+              <div class="sched-block-header"><i class="fas fa-microphone"></i><span class="sched-artist-badge sched-badge-gold">Resident</span></div>
+              <strong class="sched-artist">Kris Bradley</strong>
+              <span class="sched-genre">Late Set</span>
+              <span class="sched-slot-time">6 – 9 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="5">
+            <div class="sched-block sched-block-main sched-block-featured">
+              <div class="sched-block-header"><i class="fas fa-microphone"></i><span class="sched-artist-badge sched-badge-purple">Featured</span></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Live Band</span>
+              <span class="sched-slot-time">6 – 9 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="6">
+            <div class="sched-block sched-block-main sched-block-featured">
+              <div class="sched-block-header"><i class="fas fa-microphone"></i><span class="sched-artist-badge sched-badge-purple">Featured</span></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Full Band Night</span>
+              <span class="sched-slot-time">6 – 9 PM</span>
+            </div>
+          </div>
+          <div class="sched-day-col" data-day="0">
+            <div class="sched-block sched-block-main">
+              <div class="sched-block-header"><i class="fas fa-microphone"></i></div>
+              <strong class="sched-artist">Artist TBD</strong>
+              <span class="sched-genre">Island Vibes</span>
+              <span class="sched-slot-time">6 – 9 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="sched-footer">
+          <div class="sched-legend">
+            <span class="sched-legend-item"><span class="sleg-dot sleg-gold"></span>Kris Bradley — Resident Artist</span>
+            <span class="sched-legend-item"><span class="sleg-dot sleg-purple"></span>Featured Night (Fri &amp; Sat)</span>
+            <span class="sched-legend-item"><span class="sleg-dot sleg-default"></span>Live Music Nightly</span>
+          </div>
+          <p class="sched-note"><i class="fas fa-info-circle"></i> Schedule subject to change · Follow <a href="https://www.instagram.com/trippwilsonpresents" target="_blank" rel="noopener">@trippwilsonpresents</a> for weekly updates</p>
+        </div>
+
+      </div><!-- /music-scheduler -->
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ARTIST SPOTLIGHT / WHO PLAYS AT OHANA'S
+  ============================================================ -->
+  <section id="artists" class="ashow-section">
+
+    <!-- Decorative background layer -->
+    <div class="ashow-bg-layer" aria-hidden="true">
+      <div class="ashow-bg-orb ashow-bg-orb-1"></div>
+      <div class="ashow-bg-orb ashow-bg-orb-2"></div>
+    </div>
+
+    <div class="container ashow-container">
+
+      <!-- ── Section Header ── -->
+      <div class="ashow-header">
+        <span class="ashow-eyebrow"><i class="fas fa-microphone"></i> Artist Spotlight</span>
+        <h2 class="ashow-title">Who Plays at <em>Ohana's</em></h2>
+        <p class="ashow-subtitle">Maui's most intimate stage. World-class artists. Every single night — 3 PM to 9 PM.</p>
+        <div class="ashow-divider">
+          <span></span><i class="fas fa-guitar"></i><span></span>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════
+           TRIPP WILSON — OWNER & ARTIST
+      ══════════════════════════════════════════════ -->
+      <article class="ashow-spotlight ashow-spotlight-tripp">
+
+        <!-- Left: Photo only -->
+        <div class="ashow-photo-col">
+          <div class="ashow-photo-frame">
+            <img
+              src="https://img.youtube.com/vi/E11yaWAg-QU/maxresdefault.jpg"
+              alt="Tripp Wilson — Owner and Artist at Ohana's Island Bistro"
+              loading="lazy" />
+            <div class="ashow-photo-gradient"></div>
+
+            <div class="ashow-photo-badge ashow-photo-badge-gold">
+              <i class="fas fa-crown"></i>
+              <div>
+                <strong>Owner &amp; Artist</strong>
+                <span>Nightly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Bio + info -->
+        <div class="ashow-bio-col">
+
+          <div class="ashow-bio-header">
+            <div>
+              <p class="ashow-bio-eyebrow">Owner &amp; Founder</p>
+              <h3 class="ashow-artist-name">Tripp Wilson</h3>
+              <p class="ashow-artist-role">Singer · Songwriter · Restaurateur</p>
+            </div>
+            <a href="https://www.youtube.com/@trippwilson" target="_blank" rel="noopener" class="ashow-ext-link" aria-label="Tripp Wilson YouTube">
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="ashow-genre-row">
+            <span class="ashow-gtag">Country</span>
+            <span class="ashow-gtag">Americana</span>
+            <span class="ashow-gtag">Singer-Songwriter</span>
+            <span class="ashow-gtag">Island Rock</span>
+          </div>
+
+          <p class="ashow-bio-text">
+            The heart and soul of Ohana's — Tripp Wilson is a recording artist with original music on Spotify, Apple Music, and YouTube. He built this place from the ground up as both a restaurant and a stage, and you can hear that love in every note. From the anthemic <em>"Way Back Home"</em> to the radio-ready <em>"Stole My Heart"</em>, Tripp's music is the spirit of Ohana's, performed live for you tonight.
+          </p>
+
+          <blockquote class="ashow-quote">
+            <i class="fas fa-quote-left"></i>
+            Ohana's isn't just a restaurant. It's my stage, my kitchen, and my family.
+          </blockquote>
+
+          <div class="ashow-quick-facts">
+            <div class="ashow-fact">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Kihei, Maui, Hawai'i</span>
+            </div>
+            <div class="ashow-fact">
+              <i class="fas fa-compact-disc"></i>
+              <span>Singer · Songwriter · Restaurateur</span>
+            </div>
+            <div class="ashow-fact">
+              <i class="fab fa-youtube"></i>
+              <a href="https://www.youtube.com/@trippwilson" target="_blank" rel="noopener">youtube.com/@trippwilson</a>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- Gold rule between artists -->
+      <div class="ashow-rule" aria-hidden="true"><span></span></div>
+
+      <!-- ══════════════════════════════════════════════
+           KRIS BRADLEY — FEATURED RESIDENT ARTIST
+      ══════════════════════════════════════════════ -->
+      <article class="ashow-spotlight ashow-spotlight-kris ashow-spotlight-reverse">
+
+        <!-- Left (visually right on desktop): Photo only -->
+        <div class="ashow-photo-col">
+          <div class="ashow-photo-frame">
+            <img
+              src="images/kris-bradley.jpg"
+              alt="Kris Bradley — Resident Artist at Ohana's Island Bistro"
+              loading="lazy" />
+            <div class="ashow-photo-gradient"></div>
+
+            <!-- Floating badge -->
+            <div class="ashow-photo-badge">
+              <i class="fas fa-star"></i>
+              <div>
+                <strong>Resident Artist</strong>
+                <span>Mon &amp; Thu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Bio + info -->
+        <div class="ashow-bio-col">
+
+          <div class="ashow-bio-header">
+            <div>
+              <p class="ashow-bio-eyebrow">Featured Resident</p>
+              <h3 class="ashow-artist-name">Kris Bradley</h3>
+              <p class="ashow-artist-role">Singer · Songwriter · Producer</p>
+            </div>
+            <a href="https://krisbradleymusic.com" target="_blank" rel="noopener" class="ashow-ext-link" aria-label="Kris Bradley website">
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="ashow-genre-row">
+            <span class="ashow-gtag">Acoustic</span>
+            <span class="ashow-gtag">Singer-Songwriter</span>
+            <span class="ashow-gtag">Country</span>
+            <span class="ashow-gtag">Soul</span>
+            <span class="ashow-gtag">Jazz</span>
+          </div>
+
+          <p class="ashow-bio-text">
+            A Los Angeles-bred, island-adopted artist, Kris Bradley is a multi-talented singer, songwriter, and producer whose catalog spans heartfelt originals to soulful covers. Her warm, expressive voice and effortless command of the stage make every performance at Ohana's feel like a private concert under the Maui stars — intimate, powerful, and impossible to forget.
+          </p>
+
+          <blockquote class="ashow-quote">
+            <i class="fas fa-quote-left"></i>
+            Music is how I connect. Every show, every song — it's a conversation.
+          </blockquote>
+
+          <div class="ashow-quick-facts">
+            <div class="ashow-fact">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Los Angeles → Maui</span>
+            </div>
+            <div class="ashow-fact">
+              <i class="fas fa-compact-disc"></i>
+              <span>Singer · Songwriter · Producer</span>
+            </div>
+            <div class="ashow-fact">
+              <i class="fas fa-globe"></i>
+              <a href="https://krisbradleymusic.com" target="_blank" rel="noopener">krisbradleymusic.com</a>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ── Coming Soon card ── -->
+      <div class="ashow-coming-banner">
+        <div class="ashow-coming-inner">
+          <i class="fas fa-microphone-lines ashow-coming-icon"></i>
+          <div class="ashow-coming-text">
+            <h4>More Artists Coming Soon</h4>
+            <p>Ohana's stage is home to incredible local and touring artists every night of the week. Follow us for weekly lineup announcements.</p>
+          </div>
+          <div class="ashow-coming-pills">
+            <span><i class="fas fa-music"></i> Tue &amp; Wed</span>
+            <span><i class="fas fa-fire"></i> Fri &amp; Sat</span>
+            <span><i class="fas fa-sun"></i> Sunday</span>
+          </div>
+          <a href="https://www.instagram.com/trippwilsonpresents" target="_blank" rel="noopener" class="btn btn-outline ashow-coming-btn">
+            <i class="fab fa-instagram"></i> Follow for Updates
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </section>
+
+  <!-- ATMOSPHERE SPLIT -->
+  <section class="atmosphere">
+    <div class="atmo-image">
+      <img src="https://www.genspark.ai/api/files/s/3iGjGwSQ" alt="Live performer on stage with full crowd" loading="lazy" />
+    </div>
+    <div class="atmo-content">
+      <span class="section-tag">The Experience</span>
+      <h2>Where the Island<br /><em>Comes Alive</em></h2>
+      <p>Under string lights and tiki torches, our open-air patio transforms every evening into something truly magical. Sip a frozen cocktail, enjoy fresh island-inspired cuisine, and let the music carry you away.</p>
+      <p>From soulful keyboard players to full live bands — every night brings something new to Kihei.</p>
+      <a href="#gallery" class="btn btn-gold" style="margin-top:.5rem;">See the Vibe</a>
+    </div>
+  </section>
+
+  <!-- MENU PREVIEW -->
+  <section id="menu" class="menu-preview-section">
+
+    <!-- Header -->
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fresh &amp; Made From Scratch</span>
+        <h2>The <em>Menu</em></h2>
+        <p>Island-inspired cuisine crafted with love, local ingredients, and a whole lot of aloha. Every dish made to order.</p>
+      </div>
+    </div>
+
+    <!-- Featured dishes showcase — 9 cards, clean 3×3 grid -->
+    <div class="menu-preview-grid container">
+
+      <!-- Pauly's Saucy Ribs -->
+      <a href="menu.html#entrees" class="mpv-card">
+        <img src="https://www.genspark.ai/api/files/s/umEWthnb" alt="Pauly's Saucy Ribs" loading="lazy" />
+        <div class="mpv-overlay">
+          <div class="mpv-badges"><span class="mpv-badge mpv-badge-gold">House Specialty</span><span class="mpv-badge mpv-badge-gf">GF</span></div>
+          <div class="mpv-info">
+            <h3>Pauly's Saucy Ribs</h3>
+            <span class="mpv-desc">Slow cooked, homemade BBQ sauce, fries &amp; red slaw</span>
+            <span class="mpv-price">$35</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 14oz Ribeye -->
+      <a href="menu.html#entrees" class="mpv-card">
+        <img src="https://www.genspark.ai/api/files/s/rppnAnKZ" alt="14oz Ribeye" loading="lazy" />
+        <div class="mpv-overlay">
+          <div class="mpv-badges"><span class="mpv-badge mpv-badge-gf">GF</span></div>
+          <div class="mpv-info">
+            <h3>14oz Ribeye</h3>
+            <span class="mpv-desc">Herb butter, mashed potatoes &amp; sautéed veggies</span>
+            <span class="mpv-price">$42</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Island Breeze Pasta -->
+      <a href="menu.html#entrees" class="mpv-card">
+        <img src="https://www.genspark.ai/api/files/s/VFX9Bf0k" alt="Island Breeze Pasta" loading="lazy" />
+        <div class="mpv-overlay">
+          <div class="mpv-badges"><span class="mpv-badge mpv-badge-gf">GF</span></div>
+          <div class="mpv-info">
+            <h3>Island Breeze Pasta</h3>
+            <span class="mpv-desc">Scallops &amp; shrimp, creamy sundried tomato basil sauce</span>
+            <span class="mpv-price">$35</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Huli Huli Chicken -->
+      <a href="menu.html#entrees" class="mpv-card">
+        <img src="https://www.genspark.ai/api/files/s/PGhwVbuL" alt="Huli Huli Chicken" loading="lazy" />
+        <div class="mpv-overlay">
+          <div class="mpv-badges"><span class="mpv-badge mpv-badge-gf">GF</span></div>
+          <div class="mpv-info">
+            <h3>Huli Huli Chicken</h3>
+            <span class="mpv-desc">Slow roasted half chicken with Huli Huli glaze</span>
+            <span class="mpv-price">$33</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Bistro Burger -->
+      <a href="menu.html#burgers" class="mpv-card">
+        <img src="https://www.genspark.ai/api/files/s/JQTnasAq" alt="Bistro Burger" loading="lazy" />
+        <div class="mpv-overlay">
+          <div class="mpv-badges"><span class="mpv-badge mpv-badge-gold">Fan Favorite</span></div>
+          <div class="mpv-info">
+            <h3>Bistro Burger</h3>
+            <span class="mpv-desc">Angus beef, pimento cheese &amp; crispy bacon</span>
+            <span class="mpv-price">$18</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Island Nachos -->
+      <a href="menu.html#appetizers" class="mpv-card">
+        <img src="https://www.genspark.ai/api/files/s/lxT37d16" alt="Island Nachos" loading="lazy" />
+        <div class="mpv-overlay">
+          <div class="mpv-badges"><span class="mpv-badge mpv-badge-purple">Must Try</span></div>
+          <div class="mpv-info">
+            <h3>Island Nachos</h3>
+            <span class="mpv-desc">Loaded island-style nachos with house sauces</span>
+            <span class="mpv-price">$16</span>
+          </div>
+        </div>
+      </a>
+
+
+      <!-- Fresh Catch of the Day -->
+      <a href="menu.html#entrees" class="mpv-card">
+        <img src="https://www.genspark.ai/api/files/s/UdrfIuTf" alt="Fresh Catch of the Day" loading="lazy" />
+        <div class="mpv-overlay">
+          <div class="mpv-badges"><span class="mpv-badge mpv-badge-gf">GF</span><span class="mpv-badge mpv-badge-purple">Chef's Pick</span></div>
+          <div class="mpv-info">
+            <h3>Fresh Catch of the Day</h3>
+            <span class="mpv-desc">Grilled local fish, herb butter caper lemon sauce</span>
+            <span class="mpv-price">$30</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Island Tacos -->
+      <a href="menu.html#appetizers" class="mpv-card">
+        <img src="https://www.genspark.ai/api/files/s/z5jOTfpC" alt="Island Tacos" loading="lazy" />
+        <div class="mpv-overlay">
+          <div class="mpv-badges"><span class="mpv-badge mpv-badge-gf">GF</span></div>
+          <div class="mpv-info">
+            <h3>Island Tacos</h3>
+            <span class="mpv-desc">Mahi, pork or shrimp, slaw &amp; mango salsa</span>
+            <span class="mpv-price">$16</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- BBQ Pulled Pork -->
+      <a href="menu.html#burgers" class="mpv-card">
+        <img src="https://www.genspark.ai/api/files/s/avBOy32D" alt="BBQ Pulled Pork Sandwich" loading="lazy" />
+        <div class="mpv-overlay">
+          <div class="mpv-badges"><span class="mpv-badge mpv-badge-gold">Fan Favorite</span></div>
+          <div class="mpv-info">
+            <h3>BBQ Pulled Pork</h3>
+            <span class="mpv-desc">Slow-cooked pulled pork, Pauly's signature BBQ sauce</span>
+            <span class="mpv-price">$17</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Category quick-links row -->
+    <div class="menu-preview-cats container">
+      <a href="menu.html#entrees" class="mpc-item">
+        <i class="fas fa-utensils"></i>
+        <span>Entrées</span>
+      </a>
+      <a href="menu.html#burgers" class="mpc-item">
+        <i class="fas fa-burger"></i>
+        <span>Burgers &amp; Sandwiches</span>
+      </a>
+      <a href="menu.html#appetizers" class="mpc-item">
+        <i class="fas fa-star"></i>
+        <span>Island Favorites</span>
+      </a>
+      <a href="menu.html#sides" class="mpc-item">
+        <i class="fas fa-bowl-rice"></i>
+        <span>Sides</span>
+      </a>
+      <a href="menu.html#drinks-menu" class="mpc-item">
+        <i class="fas fa-cocktail"></i>
+        <span>Drinks</span>
+      </a>
+    </div>
+
+    <!-- CTA -->
+    <div class="menu-preview-cta container">
+      <a href="menu.html" class="btn btn-gold btn-lg">
+        <i class="fas fa-book-open"></i> View the Full Menu
+      </a>
+      <a href="tel:+18088683111" class="btn btn-outline btn-lg">
+        <i class="fas fa-phone"></i> Call to Order &nbsp;·&nbsp; (808) 868-3111
+      </a>
+      <p>Fresh Catch · Pasta · Ribs · Burgers · Island Favorites · Handcrafted Cocktails</p>
+    </div>
+
+    <!-- Online ordering row -->
+    <div class="menu-order-row container">
+      <span class="order-row-label"><i class="fas fa-mobile-alt"></i> Order for Pickup or Delivery</span>
+      <div class="menu-order-btns">
+        <a href="#" class="btn btn-order btn-order-online" title="Online ordering coming soon">
+          <i class="fas fa-laptop"></i> Order Online
+          <span class="btn-coming-soon">Coming Soon</span>
+        </a>
+        <a href="#" class="btn btn-order btn-doordash" title="DoorDash delivery coming soon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/doordash.svg" alt="DoorDash" class="doordash-icon" />
+          Connect to DoorDash
+          <span class="btn-coming-soon">Coming Soon</span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- DRINKS / COCKTAILS -->
+  <section id="drinks" class="drinks-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Handcrafted Cocktails</span>
+        <h2>The <em>Second Best</em> Mai Tai on the Island</h2>
+        <p>...at least, that's what we tell people. Come taste for yourself and decide. Our bar team crafts every cocktail with the same aloha spirit we put into everything we do.</p>
+      </div>
+      <div class="drinks-hero">
+        <div class="drinks-hero-img">
+          <img src="https://www.genspark.ai/api/files/s/o2adziAu" alt="Famous Mai Tai" loading="lazy" />
+          <div class="drinks-hero-badge"><i class="fas fa-star"></i> The Famous Mai Tai</div>
+        </div>
+        <div class="drinks-hero-content">
+          <span class="section-tag">Our Specialty</span>
+          <h3>Island Cocktails,<br /><em>Made with Love</em></h3>
+          <p>Fresh-squeezed juices, premium spirits, and a whole lot of island soul. Every cocktail is made to order — because you deserve nothing less.</p>
+          <p>Come in for <strong>Happy Hour</strong> and discover why our Mai Tai keeps people coming back night after night.</p>
+          <div class="drinks-tags">
+            <span><i class="fas fa-check"></i> Fresh Squeezed Juices</span>
+            <span><i class="fas fa-check"></i> Premium Spirits</span>
+            <span><i class="fas fa-check"></i> Frozen Cocktails</span>
+            <span><i class="fas fa-check"></i> Happy Hour Daily</span>
+          </div>
+        </div>
+      </div>
+      <div class="drinks-grid">
+        <div class="drink-card">
+          <div class="drink-img-wrap">
+            <img src="https://www.genspark.ai/api/files/s/MtcxigzT" alt="Tiki cocktails" loading="lazy" />
+          </div>
+          <div class="drink-card-body">
+            <h4>Tiki Bar Classics</h4>
+            <p>Layered, beautiful, unforgettable.</p>
+          </div>
+        </div>
+        <div class="drink-card">
+          <div class="drink-img-wrap">
+            <img src="https://www.genspark.ai/api/files/s/9RY9fDxp" alt="Coconut margarita" loading="lazy" />
+          </div>
+          <div class="drink-card-body">
+            <h4>Coconut Margarita</h4>
+            <p>Tropical twist on a timeless classic.</p>
+          </div>
+        </div>
+        <div class="drink-card">
+          <div class="drink-img-wrap">
+            <img src="https://www.genspark.ai/api/files/s/bYJASjRy" alt="Sunset cocktail" loading="lazy" />
+          </div>
+          <div class="drink-card-body">
+            <h4>Maui Sunset</h4>
+            <p>As beautiful as the real thing.</p>
+          </div>
+        </div>
+        <div class="drink-card">
+          <div class="drink-img-wrap">
+            <img src="https://www.genspark.ai/api/files/s/vmZuWGbw" alt="Cocktails on the patio" loading="lazy" />
+          </div>
+          <div class="drink-card-body">
+            <h4>Patio Pours</h4>
+            <p>Best enjoyed under the open sky.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section class="video-section">
+
+    <div class="video-section-header">
+      <span class="section-tag">Feel the Vibe</span>
+      <h2>One Night at <em>Ohana's</em></h2>
+      <p class="vsec-sub">Open-air patio · Tiki torches · Live music every single night</p>
+    </div>
+
+    <!-- Cinematic photo mosaic + featured video -->
+    <div class="vsec-layout">
+
+      <!-- Left: stacked gallery photos -->
+      <div class="vsec-photos">
+        <div class="vsec-photo vsec-photo-tall">
+          <img src="https://www.genspark.ai/api/files/s/uKqWEE8A" alt="Ohana's patio at night with tiki torches" loading="lazy" />
+        </div>
+        <div class="vsec-photo-pair">
+          <div class="vsec-photo">
+            <img src="https://www.genspark.ai/api/files/s/gj1lZ9sp" alt="Live musician on stage" loading="lazy" />
+          </div>
+          <div class="vsec-photo">
+            <img src="https://www.genspark.ai/api/files/s/HY9t0Fuu" alt="Toasting with the performer" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: featured YouTube embed -->
+      <div class="vsec-embed">
+        <div class="vsec-embed-label">
+          <i class="fab fa-youtube"></i>
+          <span>Tripp Wilson — Live from the Stage</span>
+        </div>
+        <div class="vsec-iframe-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/E11yaWAg-QU?rel=0&modestbranding=1&color=white"
+            title="Tripp Wilson — Way Back Home — performed live at Ohana's"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="vsec-embed-caption">
+          <p>Tripp Wilson — owner, artist, and the soul of this place — performs original music live on our stage <strong>every night.</strong></p>
+          <a href="#tripp" class="btn btn-outline vsec-cta">
+            <i class="fas fa-music"></i> Meet Tripp Wilson
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Vibe</span>
+        <h2>Come as You Are, <em>Stay All Night</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-wide">
+          <img src="https://www.genspark.ai/api/files/s/uKqWEE8A" alt="Ohana's Island patio at night — tiki torches blazing" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.genspark.ai/api/files/s/mfUVb2IC" alt="Ohana's Island venue at night" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.genspark.ai/api/files/s/LWqBpGKL" alt="Cocktails with live band" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.genspark.ai/api/files/s/gj1lZ9sp" alt="Live musician" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.genspark.ai/api/files/s/pP4xuJcB" alt="Live duo performing" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.genspark.ai/api/files/s/5nkmQNdB" alt="Keyboard player on stage" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.genspark.ai/api/files/s/HY9t0Fuu" alt="Toasting with the performer" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.genspark.ai/api/files/s/Te2IDYMT" alt="Shaka with the performer" loading="lazy" />
+        </div>
+        <div class="gallery-item gallery-wide">
+          <img src="https://www.genspark.ai/api/files/s/h62EWcXM" alt="Kihei Kalama Village sign" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">What People Are Saying</span>
+        <h2>The Love Is <em>Real</em></h2>
+        <p>Don't just take our word for it — here's what our ohana says about us on Yelp and Google.</p>
+      </div>
+
+      <!-- Platform Connection Bar -->
+      <div class="reviews-platforms">
+        <a href="https://www.google.com/maps/search/Ohana%27s+Island+Bistro+Kihei" target="_blank" rel="noopener" class="platform-badge platform-badge-google">
+          <div class="platform-badge-icon"><i class="fab fa-google"></i></div>
+          <div class="platform-badge-text">
+            <span class="pbadge-label">Find us on</span>
+            <strong>Google</strong>
+          </div>
+          <i class="fas fa-arrow-up-right-from-square pbadge-arrow"></i>
+        </a>
+        <div class="platform-heart">
+          <span>❤️</span>
+          <p>Real people.<br>Real aloha.</p>
+        </div>
+        <a href="https://www.yelp.com/biz/ohanas-island-bistro-and-music-kihei" target="_blank" rel="noopener" class="platform-badge platform-badge-yelp">
+          <div class="platform-badge-icon"><i class="fab fa-yelp"></i></div>
+          <div class="platform-badge-text">
+            <span class="pbadge-label">Find us on</span>
+            <strong>Yelp</strong>
+          </div>
+          <i class="fas fa-arrow-up-right-from-square pbadge-arrow"></i>
+        </a>
+      </div>
+
+      <!-- Featured Review -->
+      <div class="review-featured">
+        <div class="review-featured-quote">"</div>
+        <blockquote>This place is an absolute GEM in Kihei. Live music every single night, amazing food, and the friendliest staff on the island. The Mai Tai was so good we had three. The ribs were fall-off-the-bone perfect. If you're in Maui and you skip this place, you're doing it wrong.</blockquote>
+        <div class="review-featured-author">
+          <div class="review-avatar review-avatar-g">J</div>
+          <div>
+            <strong>Jessica T.</strong>
+            <span>Google &nbsp;·&nbsp; <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5 stars</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Carousel — 6 cards, auto-scrolling -->
+      <div class="reviews-carousel-wrap">
+        <div class="reviews-carousel" id="reviewsCarousel">
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar review-avatar-y">M</div>
+              <div class="review-meta">
+                <strong>Michelle R.</strong>
+                <span class="review-source"><i class="fab fa-yelp"></i> Yelp</span>
+              </div>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <p>"We stumbled upon Ohana's on our first night in Kihei and ended up going back THREE more times. The live music is incredible — a different artist every night. The Island Breeze pasta is to die for and the cocktails are dangerously good."</p>
+            <span class="review-tag">Repeat Visitor</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar review-avatar-g">D</div>
+              <div class="review-meta">
+                <strong>David K.</strong>
+                <span class="review-source"><i class="fab fa-google"></i> Google</span>
+              </div>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <p>"Best kept secret in all of Maui. Outdoor seating, live music every night, and food that absolutely slaps. The Huli Huli Chicken was the best thing I ate on my entire trip. The vibe here is unmatched — tiki torches, string lights, incredible music."</p>
+            <span class="review-tag">Best on Maui</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar review-avatar-g">R</div>
+              <div class="review-meta">
+                <strong>Robert &amp; Amy C.</strong>
+                <span class="review-source"><i class="fab fa-google"></i> Google</span>
+              </div>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <p>"We celebrated our anniversary here and it was perfect. Tiki torches, live music, and a ribeye cooked to perfection. The keyboard player even dedicated a song to us. We cried happy tears!"</p>
+            <span class="review-tag">Anniversary Dinner</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar review-avatar-g">K</div>
+              <div class="review-meta">
+                <strong>Kevin P.</strong>
+                <span class="review-source"><i class="fab fa-google"></i> Google</span>
+              </div>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <p>"Came for happy hour, stayed for dinner and dessert drinks. Couldn't leave! The bartender told us it's the 'second best Mai Tai on the island' — it's the best. Don't let them fool you. Most fun we had on our whole Maui vacation."</p>
+            <span class="review-tag">Happy Hour Hero</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar review-avatar-g">B</div>
+              <div class="review-meta">
+                <strong>Brian H.</strong>
+                <span class="review-source"><i class="fab fa-google"></i> Google</span>
+              </div>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <p>"We've been to Maui 6 times and Ohana's has been our #1 dinner spot for the last 4 trips. Great food, great music, great people every single time. It feels like coming home. The owner genuinely cares about every guest."</p>
+            <span class="review-tag">6-Time Maui Visitor</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar review-avatar-y">P</div>
+              <div class="review-meta">
+                <strong>Paul &amp; Diane F.</strong>
+                <span class="review-source"><i class="fab fa-yelp"></i> Yelp</span>
+              </div>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <p>"We're in our 60s and this is genuinely our favorite spot on Maui. The music isn't too loud, the food is incredible, the service is warm. The ribs were extraordinary. Something about this place just makes you feel completely at peace."</p>
+            <span class="review-tag">Pure Aloha Spirit</span>
+          </div>
+
+        </div><!-- /reviews-carousel -->
+
+        <!-- Carousel nav dots -->
+        <div class="carousel-dots" id="carouselDots"></div>
+
+      </div><!-- /reviews-carousel-wrap -->
+
+      <!-- CTA -->
+      <div class="reviews-cta">
+        <p>Join hundreds of happy guests — come make your own memories.</p>
+        <div class="reviews-cta-btns">
+          <a href="https://www.yelp.com" target="_blank" rel="noopener" class="btn btn-yelp"><i class="fab fa-yelp"></i> Read on Yelp</a>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-google"><i class="fab fa-google"></i> Read on Google</a>
+          <a href="#contact" class="btn btn-gold">Visit Us Tonight</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="about-inner container">
+      <div class="about-image">
+        <img src="https://www.genspark.ai/api/files/s/lVGeLkIO" alt="Ohana's Island sign" loading="lazy" />
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Our Story</span>
+        <h2>Ohana Means <em>Family</em></h2>
+        <p>Nestled in the heart of Kihei, Maui, Ohana's Island Bistro is more than a restaurant — it's a gathering place. We believe every evening deserves great food, great drinks, and great music shared with the people who matter most.</p>
+        <p>We are proud to be <strong>one of the only venues on Maui offering live music every single night.</strong> Whether it's a soulful solo pianist, a local band, or a surprise jam session, there's always something happening on our stage.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <i class="fas fa-leaf"></i>
+            <strong>Fresh &amp; Local</strong>
+            <span>Island ingredients, scratch cooking</span>
+          </div>
+          <div class="pillar">
+            <i class="fas fa-music"></i>
+            <strong>Nightly Music</strong>
+            <span>7 days a week, 365 days a year</span>
+          </div>
+          <div class="pillar">
+            <i class="fas fa-heart"></i>
+            <strong>True Aloha</strong>
+            <span>Everyone is family here</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / VISIT CTA -->
+  <section id="contact" class="contact-section">
+
+    <!-- Background patio photo -->
+    <div class="contact-bg">
+      <img src="https://www.genspark.ai/api/files/s/uKqWEE8A" alt="Ohana's Island Bistro patio at night" loading="lazy" />
+      <div class="contact-bg-overlay"></div>
+    </div>
+
+    <div class="container contact-inner">
+
+      <!-- BIG LOGO — the centrepiece -->
+      <div class="contact-logo-wrap">
+        <img src="https://www.genspark.ai/api/files/s/ZWY4IzhG" alt="Ohana's Island Bistro &amp; Live Music" class="contact-logo-img" />
+        <div class="contact-logo-glow"></div>
+      </div>
+
+      <!-- Headline -->
+      <div class="contact-headline">
+        <p class="contact-tagline-top"><i class="fas fa-map-marker-alt"></i> Kihei, Maui, Hawaii</p>
+        <h2>Join Us <em>Tonight</em></h2>
+        <p class="contact-sub">Walk-ins always welcome — we'll have a cold drink and a warm seat waiting by the stage.</p>
+      </div>
+
+      <!-- Info cards row -->
+      <div class="contact-cards">
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <strong>Location</strong>
+          <span>1945 S Kihei Rd, Suite C&amp;D<br />Kihei, Maui, HI 96753</span>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-clock"></i>
+          <strong>Hours</strong>
+          <span>Open Daily<br />11 AM – 11 PM</span>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <strong>Call Us</strong>
+          <span><a href="tel:+18088683111" class="contact-phone-link">(808) 868-3111</a></span>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-music"></i>
+          <strong>Live Music</strong>
+          <span>Every Night<br />6 PM – 11 PM</span>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-cocktail"></i>
+          <strong>Happy Hour</strong>
+          <span>Daily Specials<br />Ask Your Server</span>
+        </div>
+      </div>
+
+      <!-- CTA buttons -->
+      <div class="contact-cta-row">
+        <a href="tel:+18088683111" class="btn btn-gold btn-lg">
+          <i class="fas fa-phone"></i> Call Now · (808) 868-3111
+        </a>
+        <a href="https://maps.google.com/?q=1945+S+Kihei+Rd+Kihei+Maui+HI" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+          <i class="fas fa-map-marker-alt"></i> Get Directions
+        </a>
+        <a href="menu.html" class="btn btn-outline btn-lg">
+          <i class="fas fa-book-open"></i> View the Menu
+        </a>
+      </div>
+
+      <!-- Order Online row -->
+      <div class="contact-order-row">
+        <span class="order-row-label"><i class="fas fa-utensils"></i> Order Online</span>
+        <a href="#" class="btn btn-order btn-order-online" title="Online ordering coming soon">
+          <i class="fas fa-laptop"></i> Order Online
+          <span class="btn-coming-soon">Coming Soon</span>
+        </a>
+        <a href="#" class="btn btn-order btn-doordash" title="DoorDash delivery coming soon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/doordash.svg" alt="DoorDash" class="doordash-icon" />
+          Connect to DoorDash
+          <span class="btn-coming-soon">Coming Soon</span>
+        </a>
+      </div>
+
+      <!-- Social row -->
+      <div class="contact-social">
+        <a href="https://www.instagram.com/ohanasmaui" target="_blank" rel="noopener" class="csocial-link">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <span class="csocial-div"></span>
+        <a href="https://www.facebook.com/ohanasmaui" target="_blank" rel="noopener" class="csocial-link">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <span class="csocial-div"></span>
+        <a href="https://www.yelp.com" target="_blank" rel="noopener" class="csocial-link">
+          <i class="fab fa-yelp"></i> Yelp
+        </a>
+        <span class="csocial-div"></span>
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="csocial-link">
+          <i class="fab fa-google"></i> Google
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="https://www.genspark.ai/api/files/s/ZWY4IzhG" alt="Ohana's Island Bistro" />
+      </div>
+      <p class="footer-tagline">Maui's Home for Nightly Live Music &amp; Island Cuisine</p>
+      <div class="footer-contact-line">
+        <a href="tel:+18088683111" class="footer-phone"><i class="fas fa-phone"></i> (808) 868-3111</a>
+        <span class="footer-sep">·</span>
+        <span>1945 S Kihei Rd, Suite C&amp;D, Kihei, Maui, HI 96753</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Ohana's Island Bistro &amp; Live Music &nbsp;·&nbsp; Kihei, Maui, Hawaii</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Highlight today's column in the music scheduler
+    (function() {
+      const today = new Date().getDay(); // 0=Sun,1=Mon,...6=Sat
+      document.querySelectorAll('.sched-header .sched-day-col, .sched-row .sched-day-col').forEach(function(col) {
+        if (parseInt(col.dataset.day) === today) {
+          col.classList.add('sched-today');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
